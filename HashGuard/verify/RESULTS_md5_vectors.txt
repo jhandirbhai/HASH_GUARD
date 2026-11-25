@@ -1,0 +1,26 @@
+PASS Empty input                          chunk=512 d41d8cd98f00b204e9800998ecf8427e
+PASS Empty input                          chunk=7   d41d8cd98f00b204e9800998ecf8427e
+PASS "a"                                  chunk=512 0cc175b9c0f1b6a831c399e269772661
+PASS "a"                                  chunk=7   0cc175b9c0f1b6a831c399e269772661
+PASS "abc"                                chunk=512 900150983cd24fb0d6963f7d28e17f72
+PASS "abc"                                chunk=7   900150983cd24fb0d6963f7d28e17f72
+PASS "message digest"                     chunk=512 f96b697d7cb7938d525a2f31aaf161d0
+PASS "message digest"                     chunk=7   f96b697d7cb7938d525a2f31aaf161d0
+PASS alphabet a-z                         chunk=512 c3fcd3d76192e4007dfb496cca67e13b
+PASS alphabet a-z                         chunk=7   c3fcd3d76192e4007dfb496cca67e13b
+PASS A-Za-z0-9 (62 bytes)                 chunk=512 d174ab98d277d9f5a5611c2c9f419d9f
+PASS A-Za-z0-9 (62 bytes)                 chunk=7   d174ab98d277d9f5a5611c2c9f419d9f
+PASS 80 bytes of digits (> one block)     chunk=512 57edf4a22be3c955ac49da2e2107b67a
+PASS 80 bytes of digits (> one block)     chunk=7   57edf4a22be3c955ac49da2e2107b67a
+PASS 55 zero bytes (padding edge)         chunk=512 c9ea3314b91c9fd4e38f9432064fd1f2
+PASS 55 zero bytes (padding edge)         chunk=7   c9ea3314b91c9fd4e38f9432064fd1f2
+PASS 56 zero bytes (padding edge)         chunk=512 e3c4dd21a9171fd39d208efa09bf7883
+PASS 56 zero bytes (padding edge)         chunk=7   e3c4dd21a9171fd39d208efa09bf7883
+PASS 63 zero bytes                        chunk=512 65cecfb980d72fde57d175d6ec1c3f64
+PASS 63 zero bytes                        chunk=7   65cecfb980d72fde57d175d6ec1c3f64
+PASS 64 zero bytes (exact block)          chunk=512 3b5d3c7d207e37dceeedd301e35e2e58
+PASS 64 zero bytes (exact block)          chunk=7   3b5d3c7d207e37dceeedd301e35e2e58
+PASS 2308 bytes binary (multi-block)      chunk=512 03c9cf333f4de04d55c115f295183e28
+PASS 2308 bytes binary (multi-block)      chunk=7   03c9cf333f4de04d55c115f295183e28
+
+ALL PASSED

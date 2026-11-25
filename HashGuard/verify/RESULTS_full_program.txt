@@ -1,0 +1,23 @@
+PASS T1  Generate hash of multi-block PDF (lower-case name accepted)
+PASS T2  Generate hash of empty file
+PASS T3  Missing file reported
+PASS T4  Missing directory reported
+PASS T5  Invalid / empty file names rejected
+PASS T6  Invalid menu selections rejected
+PASS T7  View on empty/new database
+PASS T8  Verify an unregistered PDF
+PASS T9  Register two PDFs
+PASS T10 Duplicate registration refused
+PASS T11 Persistence: records visible after restart
+PASS T12 Verify unchanged PDF -> HASH MATCHED
+PASS T13 One-bit modification -> HASH MISMATCHED
+PASS T14 Appended byte -> HASH MISMATCHED
+PASS T15 Restored original -> HASH MATCHED again
+PASS T16 Registered but file deleted from disk -> file error
+PASS T17 Delete a registered document
+PASS T18 Deleted record -> not registered / delete again reports it
+PASS T19 Freed slot is reused (2 records, DB size 128 bytes)
+PASS T19b database file size = 128 bytes (expected 128)
+PASS T20 Damaged database detected
+
+21/21 passed
